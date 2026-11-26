@@ -3,6 +3,7 @@
   <Project Path="Hyjynx.Bizio.Engine.Tests/Hyjynx.Bizio.Engine.Tests.csproj" />
   <Project Path="Hyjynx.Bizio.Engine/Hyjynx.Bizio.Engine.csproj" />
   <Project Path="Hyjynx.Bizio.Simulator/Hyjynx.Bizio.Simulator.csproj" />
+  <Project Path="Hyjynx.Bizio.Wpf/Hyjynx.Bizio.Wpf.csproj" />
   <Project Path="Hyjynx.Core/Hyjynx.Core.csproj" />
   <Project Path="Hyjynx.Wpf/Hyjynx.Wpf.csproj" />
 </Solution>

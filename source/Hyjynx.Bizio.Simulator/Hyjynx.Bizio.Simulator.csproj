@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Hyjynx.Bizio.Engine\Hyjynx.Bizio.Engine.csproj" />
+    <ProjectReference Include="..\Hyjynx.Core\Hyjynx.Core.csproj" />
+  </ItemGroup>
+
 </Project>

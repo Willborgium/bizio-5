@@ -12,7 +12,10 @@ public sealed class Observer<T> : IUpdateable
     {
         ArgumentNullException.ThrowIfNull(subject);
         _subject = subject;
+        _value = subject();
     }
+
+    public T Value => _value;
 
     public void Update()
     {
