@@ -1,0 +1,22 @@
+<Project>
+    <PropertyGroup>
+        <!-- Framework -->
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <!-- Code quality -->
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <AnalysisLevel>latest</AnalysisLevel>
+        <AnalysisMode>Recommended</AnalysisMode>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+
+        <!-- Build -->
+        <Deterministic>true</Deterministic>
+        <NoWarn>$(NoWarn);NU1507</NoWarn>
+
+        <!-- Package configuration -->
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+</Project>

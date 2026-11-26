@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net11.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hyjynx.Core\Hyjynx.Core.csproj" />
+    <ProjectReference Include="..\Hyjynx.Bizio.Engine\Hyjynx.Bizio.Engine.csproj" />
+  </ItemGroup>
+
+</Project>

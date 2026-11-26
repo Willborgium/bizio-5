@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Hyjynx.Bizio.App/Hyjynx.Bizio.App.csproj" />
+  <Project Path="Hyjynx.Bizio.Engine.Tests/Hyjynx.Bizio.Engine.Tests.csproj" />
+  <Project Path="Hyjynx.Bizio.Engine/Hyjynx.Bizio.Engine.csproj" />
+  <Project Path="Hyjynx.Bizio.Simulator/Hyjynx.Bizio.Simulator.csproj" />
+  <Project Path="Hyjynx.Core/Hyjynx.Core.csproj" />
+  <Project Path="Hyjynx.Wpf/Hyjynx.Wpf.csproj" />
+</Solution>

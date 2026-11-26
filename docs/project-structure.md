@@ -1,0 +1,24 @@
+# projects
+
+- App
+  - Contains wiring and launching logic
+  - Build the executable
+  - References any project it needs
+  - Is not referenced by anything
+- Engine
+  - Contains core game logic
+  - References only Core
+- Engine.Tests
+  - Contains tests for Engine logic
+  - References only Engine
+- Wpf
+  - Contains platform-specific shareable code
+  - References Core and Engine
+- Core
+  - Contains platform-independent shareable code
+  - References nothing
+- Simulator
+  - Contains a "headless" version of the game that can run the engine using prescribed inputs
+  - Builds a console app
+  - References any project it needs
+  - Is not referenced by anything
