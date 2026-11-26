@@ -9,8 +9,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Hyjynx.Core\Hyjynx.Core.csproj" />
-    <ProjectReference Include="..\Hyjynx.Core\Hyjynx.Wpf.csproj" />
-    <ProjectReference Include="..\Hyjynx.Core\Hyjynx.Engine.csproj" />
+    <ProjectReference Include="..\Hyjynx.Wpf\Hyjynx.Wpf.csproj" />
+    <ProjectReference Include="..\Hyjynx.Bizio.Engine\Hyjynx.Bizio.Engine.csproj" />
   </ItemGroup>
 
 </Project>

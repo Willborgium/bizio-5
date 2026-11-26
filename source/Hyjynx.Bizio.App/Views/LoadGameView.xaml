@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="Hyjynx.Bizio.App.Views.LoadGameView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d">
+    <Grid Margin="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Load Game"
+                   FontSize="24"
+                   Margin="0,0,0,16"/>
+
+        <ListBox Grid.Row="1"
+                 ItemsSource="{Binding Saves}"
+                 SelectedItem="{Binding SelectedSave}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Name}" FontWeight="SemiBold"/>
+                        <TextBlock Text="{Binding LastWriteUtc, StringFormat=Last updated: {0:u}}"
+                                   Foreground="Gray"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <StackPanel Grid.Row="2"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="0,16,0,0">
+            <Button Content="Back"
+                    Width="100"
+                    Margin="0,0,8,0"
+                    Command="{Binding BackCommand}"/>
+            <Button Content="Refresh"
+                    Width="100"
+                    Margin="0,0,8,0"
+                    Command="{Binding RefreshCommand}"/>
+            <Button Content="Load Selected"
+                    Width="120"
+                    Command="{Binding LoadSelectedCommand}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
